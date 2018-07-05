@@ -1,0 +1,259 @@
+/******************
+Nielsen Color Codes:
+Blue: #00AEEF 
+Purple: #B21DAC 
+Green: #8DC63F
+Red: #DC0015
+Yellow: #FFB100
+Black: #000000
+*******************/
+
+
+/*****************************
+**Begin Index Page CSS**
+******************************/
+
+html, body {
+	font-family:Archivo Narrow;
+	width:100%;
+	height:100%;
+}
+
+.container {
+	height:80%;
+	margin: 0 auto;
+	min-width:50%;
+	max-width:50%;
+	position:fixed;
+	top:0%;
+	left:0%;
+	display:block;
+	float:left;
+}
+
+
+.textarea {
+	height:85%;
+	width:75%;
+	position: absolute;
+	bottom:10%;
+	right:10%;
+	display: block;
+}
+
+.indexlogo {
+	position:absolute;
+	top:0%;
+	left:15%;
+	height:50px;
+	width:45px;
+	z-index: 50;
+}
+
+.media {
+	position:absolute;
+	top:20%;
+	left:15%;
+}
+
+.title {
+	font-size:30px;
+	font-weight:bold;
+	height:20px;
+}
+
+.text {
+	position:absolute;
+	top:40%;
+	left:0%;
+	font-size:20px;
+}
+
+.enterarea {
+	position: absolute;
+	bottom:2.5%;
+	width:100%;
+	height:10%;
+	display: block;
+	overflow: none;
+}
+
+.enter {
+	display: block;
+	overflow: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container2 {
+	height:90%;
+	margin: 0 auto;
+	min-width:50%;
+	position:absolute;
+	top:0%;
+	right:0%;
+	overflow: none;
+	display:block;
+	float:right;
+}
+
+.mainimg {
+	position:fixed;
+	top:0%;
+	left:50%;
+	height:100%;
+	min-width:50%;
+	margin: 0 auto;
+	overflow: none;
+	display:block;
+}
+
+.footer {
+	position:fixed;
+	left:-1%;
+	bottom:0%;
+	width:101%;
+}
+
+/*****************************
+**Begin Methodology Page CSS**
+******************************/
+.logo {
+	position:fixed;
+	top:0%;
+	left:78.5px;
+	height:50px;
+	width:45px;
+	z-index: 50;
+}
+
+.bodycont {
+	position:absolute;
+	width:75%;
+	top:0%;
+	left:450px;
+	display:block;
+	float:right;
+	overflow: none;
+}
+
+
+h1 {
+	width:60%;
+	font-size:500%;
+	position:absolute;
+	text-align: center;
+}
+
+.sidebar {
+	min-height:100%;
+	min-width:300px;
+	max-width:25%;
+	background-color:black;
+	position:fixed;
+	top:0;
+	left:0;
+	display:block;
+	overflow: none;
+	z-index:0;
+}
+
+
+table.menu {
+	position: fixed;
+	top:35%;
+	left:0%;
+	min-width: 160px;
+	min-height: 200px;
+	text-align: justify;
+	color:white;
+	font-size:23px;
+	font-weight:normal;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+             color:black;
+}
+
+
+a {
+	text-decoration: none;
+	color:white;
+	overflow: none;
+	display:block;
+	width:100%;
+}
+
+a:visited {
+	color:white;
+}
+
+a:hover {
+    opacity: 1;
+   	color:#00AEEF; 
+}
+
+.headers {
+	color:black;
+	font-size:22px;
+	font-weight:bold;
+	height:25px;
+}
+
+.subheaders {
+	color:#00AEEF;
+	font-size:18px;
+	font-weight:bold;
+	height:30px;
+}
+
+p {
+	font-size:18px;
+	color:black;
+	width:65%;
+	text-align: justify;
+	overflow: none;
+	display:block;
+}
+
+.titles {
+	text-align:justify;
+	font-size:22px;
+	color: #00AEEF;
+	z-index:40;
+	padding:10px;
+}
+
+.align {
+	position:absolute;
+	top:200px;
+	width:100%;
+}
+
+/*****************************
+**Begin Dashboard 1 Page CSS**
+******************************/
+
+#wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    min-width:75%;
+    min-height: 100%;
+	float:right;
+	position:absolute;
+	top:0%;
+	right:0%;
+}
+
+.viz {
+	width: 200px;
+	position: relative;
+	left:15%;
+}

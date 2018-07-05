@@ -1,0 +1,286 @@
+/******************
+Nielsen Color Codes:
+Blue: #00AEEF 
+Purple: #B21DAC 
+Green: #8DC63F
+Red: #DC0015
+Yellow: #FFB100
+Black: #000000
+*******************/
+
+
+/*****************************
+**Begin Index Page CSS**
+******************************/
+html, body {
+	font-family:Archivo Narrow;
+	margin:0;
+	padding:0;
+	height: 100%;
+}
+
+.wrapper {
+	display:grid;
+	height:100%;
+	grid-template-columns: 1fr 3fr 1fr 5fr;
+	grid-template-rows: 3fr 3fr 3fr;
+	grid-template-areas: 
+	"blocka logo blockb image"
+	"blocka texta blockb image"
+	"blocka enter blockb image";
+}
+
+.logo {
+	width:100%;
+	height:100%;
+	display: grid;
+  	grid-template-rows: repeat(3,1fr);
+}
+
+#nlogo {
+	height:75px;
+	width:45px;
+}
+
+.media {
+	grid-row:3/3;
+}
+
+.blocka {
+	grid-area:blocka;
+	grid-template-columns: 1/4;
+}
+
+.text {
+	grid-area:texta;
+	grid-template-columns: 2/4;
+}
+
+.titlebox {
+	display: table-cell;
+	vertical-align: text-top;
+	font-size:25px;
+	font-weight: bold;
+}
+
+.textbox {
+	display: table-cell;
+  	vertical-align: middle;
+  	font-size: 19px;
+}
+
+.blockb {
+	grid-area:blockb;
+	grid-template-columns: 3/4;
+	grid-template-rows:2/4;
+}
+
+.enterarea {
+	display:grid;
+	grid-template-rows: repeat(4,1fr);
+}
+
+.enter {
+	display: flex;
+	justify-content: center;
+	max-height: 75px;
+	grid-row: 1/4;
+}
+
+.image {
+	grid-area:image;
+	grid-template-columns: 4/4;
+}
+
+#mainimg {
+	display: grid;
+	height:95%;
+	width:100%;
+}
+
+.footerimg {
+	width:100%;
+	position:absolute;
+	bottom:0%;
+	left:0%;
+}
+
+/*****************************
+**Begin Methodology Page CSS**
+******************************/
+.container {
+	display: grid;
+	min-height:100%;
+	grid-template-columns: 3fr 1.5fr 10fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas: 
+	"sidebar title title"
+	"sidebar block viz"
+	"sidebar block viz";
+}
+
+#sidebar {
+	grid-area: sidebar;
+	display: grid;
+	grid-template-rows: 2fr 1.5fr 2fr;
+	grid-template-columns: 1fr 2fr;
+	background-color: black;
+	grid-row:1/4;
+}
+
+.col {
+	position:fixed;
+	top:0%;
+	left:0px;
+	width:22%;
+	min-height:100%;
+	z-index: -1;
+	background-color: black;
+}
+
+.block {
+	grid-area: block;
+}
+
+.titlearea {
+	grid-area: title;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	color:black;
+	font-size: 5em;
+}
+
+.menu {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	color:white;
+	font-size:24px;
+}
+
+#area {
+	display: grid;
+	grid-template-rows: 1fr;
+	width:75%;
+	grid-row:2/4;
+}
+
+.heading {
+	font-size: 22px;
+	font-weight:bold;
+	max-height: 25px;
+}
+
+#body-text {
+	font-size: 18px;
+	font-weight:normal;
+}
+
+
+a {
+	color:white;
+	text-decoration: none;
+}
+
+a:visited {
+	color:white;
+}
+
+a:hover {
+	color:#00AEEF;
+}
+
+
+/*****************************
+**BEGIN DASHBOARD 1 CSS*******
+******************************/
+
+/*****************************
+*******D3 Visualization*******
+******************************/
+
+.vessel {
+	display: grid;
+	height:100%;
+	grid-template-columns: 3fr 1.5fr 10fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas: 
+	"sidebar title title"
+	"sidebar block viz"
+	"sidebar block viz";
+}
+
+
+#vizarea {
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 6fr;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+#viz {
+	grid-row: 3/8;
+	grid-column: 2/3;
+}
+
+#graph {
+	grid-row: 2/2;
+	grid-column: 2/3;
+}
+
+#body {
+	display: grid;
+	grid-template-rows: 1fr 1fr 10fr;
+	grid-row: 2/4;
+	width:75%;
+}
+
+#header {
+	font-size: 22px;
+	font-weight:bold;
+	max-height: 25px;
+}
+
+#subheader {
+	font-size: 20px;
+	color:#00AEEF;
+	font-weight:normal;
+}
+
+.bodytext {
+	font-size: 18px;
+}
+
+.bar {
+    fill: #8DC63F;
+    cursor: pointer;
+  }
+.bar:hover {
+    opacity: .7;
+  }
+
+/*****************************
+**BEGIN DASHBOARD 2 CSS*******
+******************************/
+
+/*****************************
+*******D3 Visualization*******
+******************************/
+ 
+
+.bar2 {
+    fill: #FFB100;
+    cursor: pointer;
+  }
+
+.bar2:hover {
+    opacity: .7;
+  }
+
+ #visual {
+	grid-row: 3/8;
+	grid-column: 2/3;
+}

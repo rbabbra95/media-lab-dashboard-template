@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard 2</title><!--*****Replace this text with your page title 
+(text that appears when you hover over tab)*****-->
+
+<link href='https://fonts.googleapis.com/css?family=Archivo Narrow' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+  <!--These are the default Nielsen fonts - not default HTML5
+    fonts so these Google Font APIs need to be added in.-->
+
+    <link rel="icon" href="../images/favicon.ico" /><!--Tab image-->
+    <link rel="stylesheet" href="stylesheet.css"><!--Links to CSS file-->
+
+    <script src="https://d3js.org/d3.v4.min.js"></script><!--Imports D3 capability-->
+
+  </head>
+  <body>
+    <div class="col"></div>
+    <div class="vessel"><!--Container-->
+      <div id="sidebar">
+        <div></div>
+        <div><img id="nlogo" src="../images/nielsen_logo.png"></div><!--Nielsen Logo-->
+        <div></div>
+      <div class="menu">
+      <div class="rows"><a href="index.html">HOME</a></div>
+      <div class="rows"><a href="methodology.html">METHODOLOGY</a></div>
+      <div class="rows"><a href="dash1.html">DASHBOARD 1</a></div><!--*****Replace with name of dashboard*****-->
+      <div class="rows"><a href="dash2.html" style="color:#00AEEF">DASHBOARD 2</a></div><!--*****Replace with name of dashboard*****-->
+      </div>
+    </div>
+
+      <div class="block"></div>
+      <div class="titlearea">
+        <div class="title">DASHBOARD 2</div><!--ENTER DASHBOARD TITLE HERE-->
+      </div>
+      
+      <div id="body">
+      <div>
+      <span id="header">Enter Your Title Here</span><!-- ENTER VISUAL TITLE HERE -->
+      <br /><!--Line Break-->
+      <span id="subheader">Enter Your Subtitle Here (Optional)</span>
+      <div>&nbsp;</div><!--Spacing-->
+      </div>
+      <div id="vizarea">
+      <div id="visual"></div> <!-- D3 REFERENCE -->
+      </div>
+
+      </div>
+    </div>
+    <!-- START D3 -->
+    <script src="index.js"></script>
+    <script>  
+      createVisual(); 
+    </script> 
+    <!-- END D3 -->
+    <br />
+  </body>
+  </html>
